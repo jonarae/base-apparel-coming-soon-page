@@ -1,0 +1,110 @@
+body {
+    box-sizing: border-box;
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.page-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.left-container {
+    background-image: url("./images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    display: flex;
+    flex-flow: column;
+    padding: 60px 160px 0 170px;
+}
+
+.right-container {
+    background-image: url("./images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    margin-top: 6rem;
+
+}
+
+.title strong {
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 400;
+    line-height: 2;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+/* Form */
+.email {
+    align-items: center;
+
+    border: .5px solid lightgray;
+    border-radius: 30px;
+    border-right: none;
+
+    position: relative;
+    width: 90%;
+    display: flex;
+}
+
+.email input {
+    border-style: none;
+    padding: 0 0 0 35px;
+    width: 70%;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 3;
+}
+
+.email input:focus, .email input:active {
+    border-radius: 30px;
+}
+
+.email input::placeholder {
+    color: hsl(0, 36%, 70%);
+    opacity: 0.5;
+}
+
+.error-icon {
+    padding: 10px;
+}
+
+.submit-email {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 0 35px;
+    border-radius: 30px;
+    border-style: none;
+    height: 52px;
+}
+
+.submit-email:hover {
+    background-image: none;
+    background-color: hsl(0, 36%, 70%);
+    cursor: pointer;
+}
+
+.error-msg {
+    color: hsl(0, 93%, 68%);
+    padding: 0 35px;
+    font-size: .9rem;
+    margin-bottom: 100px;
+}
+
