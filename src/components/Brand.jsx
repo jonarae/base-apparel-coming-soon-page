@@ -3,7 +3,7 @@ import { tsPropertySignature } from '@babel/types';
 
 function Brand() {
     return (
-        <div className="logo"><img src="/images/logo.svg" alt=""/></div>
+        <div className="logo"><img src="images/logo.svg" alt=""/></div>
     );
 }
 
