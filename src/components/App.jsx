@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Brand from './Brand';
 import Title from './Title';
 import Subtitle from './Subtitle';
 import Form from './Form';
@@ -7,9 +9,17 @@ import Footer from './Footer';
 function App() {
     return (
         <div>
-            <Title text="We're coming soon" />
-            <Subtitle text="Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals." />
-            <Form />
+            <div className="page-container">
+                <div className="left-container">
+                    <Brand />
+                    <Title />
+                    <Subtitle />
+                    <Form />
+                </div>
+                <div className="right-container">
+
+                </div>
+            </div>
             <Footer />
         </div>
     );
